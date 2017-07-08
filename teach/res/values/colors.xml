@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#19e64dff</color>
+    <color name="black">#000000</color>
+    <color name="warmgrey">#808069</color>
+    <color name="pink">#ffc0cb</color>
+    <color name="aliceblue">#f0f8ff</color>
+    <color name="palegoldrod">#eee8aa</color>
+    <color name="bohe">#bdfcc9</color>
+    <color name="darkbrown">#d2b48c</color>
+    <color name="lightgreen">#00ff7e</color>
+    <color name="whiteapricot">#ffffcd</color>
+    <color name="border_clo">#ccc</color>
+    <color name="text_clo">#333</color>
+    <color name="white">#ffffff</color>
+    <color name="blue">#419DE4</color>
+    <color name="transparency">#00000000</color>
+    <color name="collect">#ECECEC</color>
+</resources>

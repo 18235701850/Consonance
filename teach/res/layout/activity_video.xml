@@ -1,0 +1,406 @@
+<com.example.homepage.SlidingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slidingLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/menu"
+        android:layout_width="270dip"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:layout_alignParentLeft="true"
+        android:visibility="invisible" >
+
+        <RelativeLayout
+            android:id="@+id/linear1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp" >
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/personal_image" />
+         
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img"
+                android:layout_marginTop="10dp"
+                android:text="@string/myself"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:layout_below="@id/linear1"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/button15"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="20dp" 
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/basicinformationview"
+                    android:layout_width="23sp"
+                    android:layout_height="23sp"
+                    android:src="@drawable/id" />
+                
+                <Button
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:background="#00000000"
+                android:text="@string/basicinformation" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button16"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:clickable="true" >
+                <ImageView
+                    android:id="@+id/mycollectionview"
+                    android:layout_width="23sp"
+                    android:layout_height="23sp"
+                    android:src="@drawable/collect" />
+                 <Button
+                 android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:background="#00000000"
+                android:text="@string/mycollection" />
+            </LinearLayout>
+
+           
+
+            <LinearLayout
+                android:id="@+id/button17"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/noticeview"
+                    android:layout_width="23sp"
+                    android:layout_height="23sp"
+                    android:src="@drawable/notice" />
+                 <Button
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:background="#00000000"
+                android:text="@string/notice" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/button18"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/sugesstionview"
+                    android:layout_width="23sp"
+                    android:layout_height="23sp"
+                    android:src="@drawable/suggestion" />
+                 <Button
+                 android:clickable="false"     
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:background="#00000000"
+                android:text="@string/feedback" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+       <LinearLayout
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_alignParentBottom="true"
+            android:clickable="true">
+
+                <ImageView
+                    android:layout_width="23sp"
+                    android:layout_height="23sp"
+                    android:src="@drawable/exit" 
+                    android:layout_marginLeft="20dp" 
+                android:layout_marginBottom="10dp"/>
+                
+                <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:background="#00000000"
+                android:clickable="false"
+                android:layout_marginBottom="10dp"
+                android:text="@string/exit" />
+        </LinearLayout>
+
+    </RelativeLayout>
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_alignParentRight="true"
+    android:background="@color/white" 
+     android:visibility="visible">
+
+   <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/blue" >
+
+            <Button
+                android:id="@+id/menuButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/personal_image" />>
+        
+     
+
+        <TextView
+            android:id="@+id/headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/video"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/add"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:background="@color/transparency"
+            android:text="上传" 
+             android:textSize="15sp"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+      <RelativeLayout 
+    	android:layout_width="fill_parent"
+    	android:layout_height="40dp"
+    	android:paddingLeft="10dp"
+    	android:paddingRight="10dp"
+    	android:background="@drawable/top_background">
+    	
+        <Button android:id="@+id/btnSearch"
+        	android:layout_width="wrap_content"
+        	android:layout_height="30dp"
+        	android:gravity="center"
+        	android:layout_centerVertical="true"
+        	android:layout_alignParentRight="true"
+        	android:textSize="12sp"
+        	android:textStyle="bold"
+        	android:background="@drawable/search_btn_background"
+        	android:text="搜索"/>
+        <RelativeLayout android:id="@+id/rlSearchFrameDelete"
+            android:layout_width="fill_parent"
+            android:layout_height="32dp"
+        	android:layout_centerVertical="true"
+			android:gravity="center_vertical"
+            android:layout_toLeftOf="@id/btnSearch"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            
+		    	<EditText android:id="@+id/etSearch"
+		        	android:layout_width="fill_parent"
+		        	android:layout_height="30dp"
+					android:singleLine="true"
+		        	android:background="@drawable/search_frame"
+		        	android:layout_marginRight="10dp"
+		        	android:paddingLeft="32dp"
+		        	android:textSize="12sp"
+		        	android:hint="请输入文字..."/>
+		    	
+		    	<ImageView android:id="@+id/ivDeleteText"
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:layout_alignParentRight="true"
+		    	    android:src="@drawable/iv_delete_bg"
+		    	    android:layout_centerInParent="true"
+		    	    android:paddingRight="20dp"
+		    	    android:visibility="gone"/>
+            
+        </RelativeLayout>
+        
+    	
+    </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="bottom"
+          android:orientation="vertical" >
+
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="match_parent"
+              android:layout_above="@+id/a"
+              android:orientation="vertical" >
+
+              <ListView
+                  android:id="@+id/listView"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_marginLeft="5dp"
+                  android:layout_marginRight="5dp"
+                  android:cacheColorHint="#00000000" 
+                  android:divider="#6c6c6c" />
+          </LinearLayout>
+          <LinearLayout
+              android:id="@+id/a"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:background="#f2f2f2"
+              android:orientation="horizontal" >
+
+               <LinearLayout
+                android:id="@+id/btnhome"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                 android:clickable="true" >
+                <Button
+                    android:clickable="false"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/mainno"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <TextView
+                    android:id="@+id/texthome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="10sp" 
+                    android:text="@string/homepage" />
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnluntan"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:clickable="true">
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/luntanno"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:clickable="false"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textluntan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="10sp" 
+                    android:text="@string/luntan" />
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnppt"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:clickable="true" >
+                <Button
+                    android:id="@+id/ppt"
+                    android:clickable="false"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/pptno"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textppt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="10dp" 
+                    android:text="@string/ppt" />
+
+                </LinearLayout>
+                <LinearLayout
+                android:id="@+id/btnvideo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" 
+                android:clickable="true">
+                <Button
+                    android:id="@+id/video"
+                    android:clickable="false"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/video"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <TextView
+                    android:id="@+id/textvideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="10dp" 
+                    android:text="@string/video" />
+
+                </LinearLayout>
+          </LinearLayout>
+      </RelativeLayout>
+  
+</LinearLayout>
+</com.example.homepage.SlidingLayout>

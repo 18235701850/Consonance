@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#F0F3F6" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/blue">
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparency"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/skill"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/searchgo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/search" />
+
+    </RelativeLayout>
+          <RelativeLayout 
+    	android:layout_width="fill_parent"
+    	android:layout_height="40dp"
+    	android:paddingLeft="10dp"
+    	android:paddingRight="10dp"
+    	android:id="@+id/search"
+    	android:visibility="gone"
+    	android:background="@drawable/top_background">
+    	
+        <Button android:id="@+id/btnSearch"
+        	android:layout_width="wrap_content"
+        	android:layout_height="30dp"
+        	android:gravity="center"
+        	android:layout_centerVertical="true"
+        	android:layout_alignParentRight="true"
+        	android:textSize="12sp"
+        	android:textStyle="bold"
+        	android:background="@drawable/search_btn_background"
+        	android:text="搜索"/>
+        
+        <RelativeLayout android:id="@+id/rlSearchFrameDelete"
+            android:layout_width="fill_parent"
+            android:layout_height="32dp"
+        	android:layout_centerVertical="true"
+			android:gravity="center_vertical"
+            android:layout_toLeftOf="@id/btnSearch">
+            
+		    	<EditText android:id="@+id/etSearch"
+		        	android:layout_width="fill_parent"
+		        	android:layout_height="30dp"
+					android:singleLine="true"
+		        	android:background="@drawable/search_frame"
+		        	android:layout_marginRight="10dp"
+		        	android:paddingLeft="32dp"
+		        	android:textSize="12sp"
+		        	android:hint="请输入文字..."/>
+		    	
+		    	<ImageView android:id="@+id/ivDeleteText"
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:layout_alignParentRight="true"
+		    	    android:src="@drawable/iv_delete_bg"
+		    	    android:layout_centerInParent="true"
+		    	    android:paddingRight="20dp"
+		    	    android:visibility="gone"/>
+            
+        </RelativeLayout> 
+    </RelativeLayout>
+
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="match_parent"
+              android:layout_above="@+id/a"
+              android:orientation="vertical"
+              android:layout_marginTop="10dp" >
+
+              <ExpandableListView
+                  android:id="@+id/expendlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linelayout"
+            android:cacheColorHint="#00000000" >
+		    	 </ExpandableListView>
+          </LinearLayout>
+         
+</LinearLayout>

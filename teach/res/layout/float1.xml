@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/fmessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/message"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/message" />
+
+                  
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/message"
+                        android:layout_centerVertical="true"
+                        android:text="@string/message"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="3dp"
+                        android:textSize="10dp" />
+
+                </RelativeLayout>
+
+               <RelativeLayout
+                        android:id="@+id/fskill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+                    
+                    <ImageView
+                        android:id="@+id/skill"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/skill" />
+
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/skill"
+                        android:layout_centerVertical="true"
+                        android:text="@string/skill"
+                        android:textSize="10dp"
+                        android:layout_marginTop="3dp"
+                         android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+</LinearLayout>

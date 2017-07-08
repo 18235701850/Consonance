@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+   <LinearLayout
+            android:id="@+id/linelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/img" >
+
+           <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="张三"
+                android:gravity="left"
+                android:textSize="14sp" 
+                android:textColor="#00BFFF"/>
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="right"
+                android:text="楼主"
+                android:textSize="12sp" />
+            </RelativeLayout>
+
+           <TextView
+               android:id="@+id/texttime"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:gravity="left"
+               android:text="2017/01/01 21:47"
+               android:textSize="12sp" />
+
+        </LinearLayout>
+         <ImageView
+            android:id="@+id/img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/personal_image" />
+         <TextView
+                android:id="@+id/txt2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linelayout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:focusable="false"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="实习期，当代课老师，上二年级数学课，学生上课，学生上课纪律超级差，怎么办！"
+                android:textSize="15sp"
+                android:textStyle="bold"  />
+               <TextView
+                android:id="@+id/textView1"
+                android:layout_below="@id/txt2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="各省、自治区、直辖市教育厅（教委），新疆生产建设兵团教育局，部属有关高等学校：
+
+　　近年来，我国教师教育改革持续推进，师范生教育实践不断加强，但是还存在着目标不够清晰，内容不够丰富，形式相对单一，指导力量不强，管理评价和组织保障相对薄弱等问题。师范生教育实践依然是教师培养的薄弱环节，师范毕业生的教育教学能力尚不能完全适应中小学（含幼儿园、中等职业学校、特殊教育学校，下同）的需要。为增强师范生的社会责任感、创新精神和实践能力，全面提升教师培养质量，现就加强师范生教育实践提出如下意见。
+
+　　一、明确教育实践的目标任务。师范生教育实践是教师教育课程的重要组成部分，是教师培养的必要环节。举办教师教育的院校要围绕培养适应中小学教育教学需要、高素质专业化的“四有”好教师的目标要求，通过系统设计和有效指导下的教育实践，促进师范生深入体验教育教学工作，逐步形成良好的师德素养和职业认同，更好地理解教育教学专业知识，掌握必要的教育教学设计与实施、班级管理与学生指导等能力，为从事中小学教育教学工作和持续的专业发展奠定扎实的基础。
+
+　　二、构建全方位的教育实践内容体系。举办教师教育的院校要坚持把社会主义核心价值观融入教育实践全过程，将教育实践贯穿教师培养全过程，整体设计、分阶段安排教育实践的内容，精心组织体验与反思，促进理论与实践的深度融合。在师范生培养方案中设置足量的教育实践课程，以教育见习、实习和研习为主要模块，构建包括师德体验、教学实践、班级管理实践、教研实践等全方位的教育实践内容体系，切实落实师范生教育实践累计不少于1个学期制度。"
+                android:textSize="14sp"
+                android:layout_margin="10dp"
+        android:textIsSelectable="true"/>
+               <View
+                  style="@style/bg_line"
+                  android:layout_marginBottom="2dp"
+                  android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

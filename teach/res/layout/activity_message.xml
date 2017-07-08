@@ -1,0 +1,202 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#F0F3F6" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/blue">
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparency"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/message"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/searchgo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/search" />
+
+    </RelativeLayout>
+          <RelativeLayout 
+    	android:layout_width="fill_parent"
+    	android:layout_height="40dp"
+    	android:paddingLeft="10dp"
+    	android:paddingRight="10dp"
+    	android:id="@+id/search"
+    	android:visibility="gone"
+    	android:background="@drawable/top_background">
+    	
+        <Button android:id="@+id/btnSearch"
+        	android:layout_width="wrap_content"
+        	android:layout_height="30dp"
+        	android:gravity="center"
+        	android:layout_centerVertical="true"
+        	android:layout_alignParentRight="true"
+        	android:textSize="12sp"
+        	android:textStyle="bold"
+        	android:background="@drawable/search_btn_background"
+        	android:text="搜索"/>
+        
+        <RelativeLayout android:id="@+id/rlSearchFrameDelete"
+            android:layout_width="fill_parent"
+            android:layout_height="32dp"
+        	android:layout_centerVertical="true"
+			android:gravity="center_vertical"
+            android:layout_toLeftOf="@id/btnSearch">
+            
+		    	<EditText android:id="@+id/etSearch"
+		        	android:layout_width="fill_parent"
+		        	android:layout_height="30dp"
+					android:singleLine="true"
+		        	android:background="@drawable/search_frame"
+		        	android:layout_marginRight="10dp"
+		        	android:paddingLeft="32dp"
+		        	android:textSize="12sp"
+		        	android:hint="请输入文字..."/>
+		    	
+		    	<ImageView android:id="@+id/ivDeleteText"
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:layout_alignParentRight="true"
+		    	    android:src="@drawable/iv_delete_bg"
+		    	    android:layout_centerInParent="true"
+		    	    android:paddingRight="20dp"
+		    	    android:visibility="gone"/>
+            
+        </RelativeLayout> 
+    </RelativeLayout>
+     <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="140dip" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_gravity="bottom"
+            android:background="#33000000"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中国家庭院校园区域名字体现"
+                android:textColor="#ffffff" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:gravity="center" >
+
+                <View
+                    android:id="@+id/v_dot0"
+                    style="@style/dot_style"
+                    android:background="@drawable/dot_focused" />
+
+                <View
+                    android:id="@+id/v_dot1"
+                    style="@style/dot_style" />
+
+                <View
+                    android:id="@+id/v_dot2"
+                    style="@style/dot_style" />
+
+                <View
+                    android:id="@+id/v_dot3"
+                    style="@style/dot_style" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="bottom"
+          android:orientation="vertical"
+          android:layout_marginTop="10dp" >
+
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="match_parent"
+              android:layout_above="@+id/a"
+              android:orientation="vertical" >  <LinearLayout   
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:orientation="horizontal">  
+          
+          
+        <TextView   
+            android:id="@+id/tv_guid1"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_weight="1.0"  
+            android:gravity="center"  
+            android:text="公告"  
+            android:textSize="18sp"/>  
+        <TextView    
+            android:id="@+id/tv_guid2"    
+            android:layout_width="wrap_content"    
+            android:layout_height="wrap_content"    
+            android:layout_weight="1.0"    
+            android:gravity="center"    
+            android:text="资讯"     
+            android:textSize="18sp"/>    
+    
+        <TextView    
+            android:id="@+id/tv_guid3"    
+            android:layout_width="wrap_content"    
+            android:layout_height="wrap_content"    
+            android:layout_weight="1.0"    
+            android:gravity="center"    
+            android:text="法规 "     
+            android:textSize="18sp"/>    
+    
+       
+    </LinearLayout>  
+  
+    <ImageView   
+        android:id="@+id/cursor"  
+        android:layout_width="fill_parent"  
+        android:layout_height="15dp"  
+        android:scaleType="matrix"  
+        android:src="@drawable/main_two_select"/>  
+      
+    <android.support.v4.view.ViewPager  
+        android:id="@+id/viewpager"  
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent"  
+        android:flipInterval="30"  
+        android:persistentDrawingCache="animation"/>  
+
+              
+          </LinearLayout>
+         
+      </RelativeLayout>
+  
+</LinearLayout>

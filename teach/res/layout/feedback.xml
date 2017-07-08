@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/blue">
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparency"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/feedback"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        style="@style/wrap_layout" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/phonetext"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/systemtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/editiontext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:text="TextView" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <EditText
+                android:id="@+id/editfeedback"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                android:textSize="14sp"
+                android:inputType="textMultiLine"
+                android:gravity="left|top"
+                android:minLines="6"
+                android:hint="请写入您的意见或反馈"/>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="欢迎加入我们的交流QQ群：299080063 " />
+             <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="一起学习进步！ " />
+            <EditText
+                android:id="@+id/editphonenumber"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:hint="手机号/邮箱/QQ/微信" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/feedbackok" 
+                android:textSize="18sp"
+                android:background="@drawable/circle"
+                 />
+
+        </LinearLayout>
+        
+    </LinearLayout>
+  
+</LinearLayout>

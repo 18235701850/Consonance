@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/single_layout_selector" >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <TextView
+                android:id="@+id/bodyView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:maxLength="45"
+                android:maxLines="2"
+                 android:text="一二三四五六其把求是一二三四五六其把求是一二三四五六其把求是一二三四五六其把求是一二三四五六其把求是一二三四五六其把求是"
+                android:layout_below="@+id/top"
+                android:textSize="13dp" />
+
+            <LinearLayout
+                android:id="@+id/top"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/titleView"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textSize="15dp" 
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:ellipsize="end"/>
+            
+            <TextView
+                android:id="@+id/timeView"
+                android:layout_width="fill_parent"
+                android:layout_height="12dp"
+                android:layout_weight="3"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="10sp"
+                android:text="2016-05-11"
+                android:gravity="right" />
+             </LinearLayout>
+             <View
+                  style="@style/bg_line"
+                  android:layout_marginBottom="2dp"
+                  android:layout_alignParentBottom="true"/>
+
+
+
+        </RelativeLayout>
+            
+</LinearLayout>

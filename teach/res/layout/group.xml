@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/img"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txtname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="张三"
+                    android:textColor="#00BFFF"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textwho"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:text="一楼"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/texttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_below="@id/txtname"
+                    android:text="2017/01/01 21:47"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/linearlayout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/personal_image" />
+        <Button 
+            android:id="@+id/Button1" 
+            android:layout_width="20dp" 
+            android:layout_height="20dp" 
+            android:layout_alignParentRight="true" 
+            android:layout_below="@id/txtbody" 
+            android:layout_marginRight="10dp" 
+            android:background="@drawable/huifu" 
+            android:clickable="true" 
+            android:focusable="false" 
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/txtbody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/Button1"
+            android:layout_below="@+id/linearlayout"
+            android:gravity="top|left"
+            android:maxLines="10"
+            android:minEms="20"
+            android:text="实习期，当代课老师，上二年级数学课，学生上课纪律超级差，怎么办！"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+ 
+</LinearLayout>

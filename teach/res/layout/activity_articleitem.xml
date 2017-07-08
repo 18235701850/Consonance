@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+     android:orientation="vertical"  >
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/blue">
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparency"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="帖子详情"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#FFFFFF" >
+
+        
+
+        <!-- cacheColorHint：系统默认拖动过程中列表背景是黑的,设置为透明 -->
+
+        <ExpandableListView
+            android:id="@+id/expendlist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/linelayout"
+            android:cacheColorHint="#00000000" 
+            android:divider="@null">
+        </ExpandableListView>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="600dp" 
+        android:layout_weight="6"
+        android:orientation="horizontal" 
+        android:layout_marginLeft="10dp" >
+
+        <ImageButton
+            android:id="@+id/imgbtn1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/star"
+            android:scaleType="fitXY" 
+            android:layout_weight="1"/>
+        
+        <EditText
+            android:id="@+id/sends"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/text1"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:lines="10"
+            android:singleLine="false"
+            android:layout_weight="2" 
+            android:cursorVisible="false">
+
+        </EditText>
+
+        <Button
+             android:id="@+id/btnsend"
+             style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/text1"
+            android:text="发送" 
+            android:layout_margin="5dp" 
+            android:layout_weight="1"
+            android:focusable="false"
+            android:clickable="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="groupsusername">
+        <item>春天</item>
+        <item>夏天</item>
+        <item>秋天</item>
+        <item >冬天</item>
+    </string-array>
+    
+    <string-array name="groupsuserpoints">
+        <item>还是你讲课有问题，二年级的学生讲课有意思他才喜欢听啊，多从备课上下功夫</item>
+        <item>我班也是，吵得很，我还是班主任呢！</item>
+        <item>真的，开学第一课很重要，我们班学生现在就欺负我</item>
+        <item >我也不懂，留名</item>
+        
+    </string-array>
+    
+    <string-array name="firstchildusername">
+        <item>张三</item>
+        <item>李四</item>
+        <item>王五</item>
+    </string-array>
+    
+    <string-array name="firstgroupuser">
+        <item>春天</item>
+        <item>春天</item>
+        <item>春天</item>
+    </string-array>
+    
+    <string-array name="firstchildresponse">
+        <item>问问你周围的老师，让他们帮帮你</item>
+        <item>他们就是有点儿欺软怕硬</item>
+        <item>办法嘛，要么凶一点，要么讲的精彩一点</item>
+    </string-array>
+    
+     <string-array name="secondchildusername">
+        <item>甲</item>
+        <item>乙</item>
+        <item>丙</item>
+    </string-array>
+    
+    <string-array name="secondgroupuser">
+        <item>夏天</item>
+        <item>夏天</item>
+        <item>夏天</item>
+    </string-array>
+    
+    <string-array name="secondchildresponse">
+        <item>问问你周围的老师，让他们帮帮你，借鉴一下经验</item>
+        <item>他们就是有点儿欺软怕硬。</item>
+        <item>办法嘛，讲的精彩一点，吸引人</item>
+    </string-array>
+    
+     <string-array name="thirdchildusername">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+    </string-array>
+    
+    <string-array name="thirdgroupuser">
+        <item>秋天</item>
+        <item>秋天</item>
+        <item>秋天</item>
+    </string-array>
+    
+    <string-array name="thirdchildresponse">
+        <item>问问你周围的老师</item>
+        <item>他们就是欺软怕硬</item>
+        <item>办法嘛，要么凶一点</item>
+    </string-array>
+    
+     <string-array name="fourthchildusername">
+        <item>小明</item>
+        <item>小花</item>
+        <item>小军</item>
+    </string-array>
+    
+    <string-array name="fourthgroupuser">
+        <item>冬天</item>
+        <item>冬天</item>
+        <item>冬天</item>
+    </string-array>
+    
+    <string-array name="fourthchildresponse">
+        <item>让其他老师帮帮你</item>
+        <item>熊孩子</item>
+        <item>吸引他们注意力</item>
+    </string-array>
+        <string-array name="subject">
+        <item >语文</item>
+        <item >数学</item>
+        <item >英语</item>
+    </string-array>
+    <string-array name="grade">
+        <item >初中一年级</item>
+        <item >初中二年级</item>
+        <item >初中三年级</item>
+    </string-array>
+    <string-array name="review">
+        <item >浏览次数</item>
+        <item >下载次数</item>
+    </string-array>
+    
+    
+    
+</resources>

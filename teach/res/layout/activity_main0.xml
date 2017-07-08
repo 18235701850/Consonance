@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F3F6"
+     >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/basicinformation"
+            android:textColor="@color/blue"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@color/transparency"
+            android:textColor="@color/blue" 
+            android:textSize="20sp"
+            android:text="@string/reserves" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/wrap_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <!-- 上圆角-->
+        <LinearLayout 
+            android:id="@+id/linear"
+            style="@style/top_layout"
+            android:onClick="true">
+
+            <TextView style="@style/usertext" android:text="个人头像" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/personal_image" />
+
+          	<ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+        
+        <!-- 分割线 -->
+          <View style="@style/bg_line"/>
+          <!-- 无圆角-->
+       <LinearLayout style="@style/mid_layout"
+           android:id="@+id/name">"
+            <TextView style="@style/usertext" 
+                android:text="@string/name" />
+
+            <EditText
+                android:id="@+id/editname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:layout_marginRight="20dp"
+                android:ems="10"
+                android:maxLength="10"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:clickable="false"
+                android:gravity="center_vertical|right">
+
+            </EditText>
+
+          	<ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+             <View style="@style/bg_line"/>
+          <!-- 下圆角-->
+       <LinearLayout android:id="@+id/sex" style="@style/mid_layout">
+            <TextView 
+                style="@style/usertext" 
+                android:text="@string/sex" />
+            <TextView
+                android:id="@+id/sexView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nohave"
+                android:layout_marginRight="20dp" />
+          	<ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+             <View style="@style/bg_line"/>
+        <LinearLayout android:id="@+id/age" style="@style/bottom_layout">
+            <TextView style="@style/usertext" 
+                android:text="@string/age" />
+            <TextView
+                android:id="@+id/ageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nohave"
+                android:layout_marginRight="20dp"/>
+          	<ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+             
+    </LinearLayout>
+
+   
+        <LinearLayout
+        style="@style/wrap_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <!-- 上圆角-->
+        <LinearLayout  
+            style="@style/top_layout"
+            android:id="@+id/school">
+
+            <TextView 
+                style="@style/usertext" 
+                android:text="@string/school" />
+
+            <EditText
+                android:id="@+id/editschool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10" 
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:clickable="true"
+                android:gravity="center_vertical|right"
+                android:layout_marginRight="20dp" >
+
+            </EditText>
+          	<ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+        
+        <!-- 分割线 -->
+          <View style="@style/bg_line"/>
+     
+
+          <!-- 下圆角-->
+
+       <LinearLayout
+           style="@style/mid_layout"
+           android:layout_width="match_parent" 
+           android:id="@+id/major">
+
+            <TextView style="@style/usertext" 
+                android:text="@string/major" />
+            
+            <EditText
+                android:id="@+id/editmajor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:clickable="false"
+                android:gravity="center_vertical|right" 
+                android:layout_marginRight="20dp" >
+
+            </EditText>
+          	<ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+             <View style="@style/bg_line"/>
+
+        <LinearLayout
+            android:id="@+id/grades"
+            style="@style/mid_layout"
+            android:layout_width="match_parent" >
+
+            <TextView style="@style/usertext" 
+                android:text="@string/grade" />
+            <TextView
+                android:id="@+id/gradesView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nohave"
+                android:layout_marginRight="20dp"/>
+          	<ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+             <View style="@style/bg_line"/>
+        <LinearLayout 
+            android:id="@+id/subject" 
+            style="@style/bottom_layout">
+            <TextView
+                style="@style/usertext" 
+                android:text="@string/subject" />
+            <TextView
+                android:id="@+id/subjectView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nohave"
+                android:layout_marginRight="20dp" />
+          	<ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+             
+    </LinearLayout>
+    
+     <!-- 全圆角-->
+    <LinearLayout style="@style/wrap_layout">
+        <LinearLayout style="@style/single_layout">
+            <TextView style="@style/usertext" android:text="辅助功能"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+</LinearLayout>
